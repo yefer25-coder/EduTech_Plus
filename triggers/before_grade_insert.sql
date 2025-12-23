@@ -12,6 +12,3 @@ END$$
 
 DELIMITER ;
 
-
-INSERT INTO grades (note, registration_date, evaluation_id, registration_id)
-VALUES (7, CURDATE(), 1, 1);

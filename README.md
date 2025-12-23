@@ -16,6 +16,7 @@ El proyecto está organizado modularmente para facilitar su mantenimiento y desp
 
 ```text
 EduTech_Plus/
+├── edutech_plus_complete.sql   # 🚀 SCRIPT MAESTRO (Todo en uno)
 ├── database/           # Scripts DDL (Definición de estructuras)
 │   ├── tables_database.sql       # Creación de tablas
 │   └── referential_integrity.sql # Definición de claves foráneas (FKs)
@@ -48,7 +49,32 @@ EduTech_Plus/
 - **Herramientas de Diseño**: Draw.io (para el modelado ER)
 
 ## 🚀 Guía de Instalación y Ejecución
-Para desplegar la base de datos completa, ejecute los scripts en el siguiente orden estricto para evitar errores de dependencias:
+
+### ⚡ Opción 1: Instalación Rápida (Recomendada)
+Ejecuta el script maestro que contiene todo el sistema completo:
+
+```sql
+SOURCE edutech_plus_complete.sql;
+```
+
+O desde la línea de comandos:
+```bash
+mysql -u root -p < edutech_plus_complete.sql
+```
+
+Este script único ejecuta automáticamente en el orden correcto:
+1. Creación de base de datos y tablas
+2. Claves foráneas
+3. Procedimientos almacenados
+4. Triggers
+5. Vistas
+6. Datos de prueba
+7. Consultas de ejemplo
+
+---
+
+### 📋 Opción 2: Instalación Paso a Paso
+Para desplegar la base de datos completa manualmente, ejecute los scripts en el siguiente orden estricto para evitar errores de dependencias:
 
 1. **Creación de Estructuras**:
    - Ejecutar `database/tables_database.sql` (Crea la BD y las tablas).

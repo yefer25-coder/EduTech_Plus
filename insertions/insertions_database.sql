@@ -1,11 +1,11 @@
 -- Academic Programs
-INSERT INTO academic_programs (program_name, level, duration, status)
+INSERT INTO academic_programs (program_name, description, level, status)
 VALUES
-('Software Development', 'Undergraduate', 6, 'active'),
-('Information Systems', 'Undergraduate', 8, 'active'),
-('Data Science', 'Postgraduate', 4, 'active'),
-('Digital Marketing', 'Technical', 2, 'active'),
-('Cybersecurity Specialist', 'Postgraduate', 2, 'active');
+('Software Development', NULL, 'Professional', 'active'),
+('Information Systems', NULL, 'Professional', 'active'),
+('Data Science', NULL, 'Professional', 'active'),
+('Digital Marketing', NULL, 'Technical', 'active'),
+('Cybersecurity Specialist', NULL, 'Professional', 'active');
 
 
 -- Academic Periods
@@ -16,13 +16,13 @@ VALUES
 
 
 -- Teachers
-INSERT INTO teachers (first_name, last_name, email, specialty, status)
+INSERT INTO teachers (document, first_name, last_name, email, specialty, status)
 VALUES
-('Carlos', 'Ramirez', 'c.ramirez@edutech.com', 'Software Engineering', 'active'),
-('Laura', 'Gomez', 'l.gomez@edutech.com', 'Databases', 'active'),
-('Andres', 'Lopez', 'a.lopez@edutech.com', 'Systems Analysis', 'active'),
-('Maria', 'Fernandez', 'm.fernandez@edutech.com', 'Marketing', 'active'),
-('Jorge', 'Herrera', 'j.herrera@edutech.com', 'Cybersecurity', 'active');
+('T001', 'Carlos', 'Ramirez', 'c.ramirez@edutech.com', 'Software Engineering', 'active'),
+('T002', 'Laura', 'Gomez', 'l.gomez@edutech.com', 'Databases', 'active'),
+('T003', 'Andres', 'Lopez', 'a.lopez@edutech.com', 'Systems Analysis', 'active'),
+('T004', 'Maria', 'Fernandez', 'm.fernandez@edutech.com', 'Marketing', 'active'),
+('T005', 'Jorge', 'Herrera', 'j.herrera@edutech.com', 'Cybersecurity', 'active');
 
 
 -- Students
@@ -68,30 +68,30 @@ VALUES
 -- Evaluations
 INSERT INTO evaluations (course_id, evaluation_name, percentage, date)
 VALUES
--- Cours 1: Programming I
+-- Course 1: Programming I
 (1, 'Midterm Exam', 40, '2024-08-15'),
 (1, 'Final Exam', 60, '2024-11-20'),
--- Cours 2: Databases
+-- Course 2: Databases
 (2, 'Project', 50, '2024-09-10'),
 (2, 'Final Exam', 50, '2024-11-25'),
--- Cours 3: Systems Analysis
+-- Course 3: Systems Analysis
 (3, 'Requirements Doc', 40, '2024-08-30'),
 (3, 'Final Presentation', 60, '2024-11-15'),
--- Cours 4: Machine Learning
+-- Course 4: Machine Learning
 (4, 'Final Project', 100, '2024-12-01'),
--- Cours 5: Web Development
+-- Course 5: Web Development
 (5, 'Frontend Project', 50, '2024-09-20'),
 (5, 'Backend Project', 50, '2024-11-30'),
--- Cours 6: SEO
+-- Course 6: SEO
 (6, 'Audit Report', 100, '2024-10-10'),
--- Cours 7: Social Media
+-- Course 7: Social Media
 (7, 'Campaign Plan', 100, '2024-10-25'),
--- Cours 8: Network Security
+-- Course 8: Network Security
 (8, 'Lab Practical', 50, '2024-09-15'),
 (8, 'Theory Exam', 50, '2024-11-10'),
--- Cours 9: Ethical Hacking
+-- Course 9: Ethical Hacking
 (9, 'CTF Challenge', 100, '2024-12-05'),
--- Cours 10: IT Project
+-- Course 10: IT Project
 (10, 'Case Study', 100, '2024-11-05');
 
 

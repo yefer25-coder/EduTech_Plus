@@ -51,7 +51,7 @@ CREATE TABLE academic_periods (
     period_name VARCHAR(50) NOT NULL,
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,
-    status ENUM('active', 'closed') DEFAULT 'active'Procedures
+    status ENUM('active', 'closed') DEFAULT 'active'
 );
 
 
